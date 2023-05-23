@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NRIIT-1241</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="nav_logo">NRIIT</a>
+
+        <ul class="nav_items">
+          <li class="nav_item">
+            <a href="#" class="nav_link">Home</a>
+            <a href="#" class="nav_link">Results</a>
+            <div class="admin-container">
+              <span class="admin-button" onclick="toggleInputBox()">Admin</span>
+              <div id="admin_password" class="input-box2">
+                <input type="text" placeholder="Enter password">
+              </div>
+            </div>
+            <div class="profile">
+              <a href="#" class="nav_link">Profile</a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="nav_link">View Profile</a></li>
+                <li><a href="#" class="nav_link">Update Profile</a></li>
+              </ul>
+            </div>
+            <a href="#" class="nav_link">Contact</a>
+          </li>
+        </ul>
+
+        <button class="button" id="form-open">Login</button>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home">
+      <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+        <!-- Login From -->
+        <div class="form login_form">
+          <form action="#">
+            <h2>Login</h2>
+
+            <div class="input_box">
+              <input type="text" placeholder="Roll Number" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Enter your password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+
+            <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check" />
+                <label for="check">Remember me</label>
+              </span>
+              <a href="#" class="forgot_pw">Forgot password?</a>
+            </div>
+
+            <button class="button">Login Now</button>
+
+            <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+          </form>
+        </div>
+
+        <!-- Signup From -->
+        <div class="form signup_form">
+          <form action="#">
+            <h2>Signup</h2>
+
+            <div class="input_box">
+              <input type="email" placeholder="Enter your email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="text" placeholder="Roll Number" required />
+              <i class="uil uil-envelope-alt email"></i>
+              <!-- <i class="uil uil-eye-slash pw_hide"></i> -->
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Create password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Confirm password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="input_box1">
+              <label for="branch">Branch : </label>
+              <select required>
+              <option value="" disabled selected>Select</option>
+               <option>IT</option>
+               <option>DS</option>
+               <option>CSE</option>
+               <option>ECE</option>
+              </select>
+            
+
+              <label for="year">Year : </label>
+              <select class="sel1" required>
+              <option value="" disabled selected>Select</option>
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+               <option>4</option>
+              </select>
+            </div>
+
+            <button class="button">Signup Now</button>
+
+            <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
